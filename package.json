@@ -1,7 +1,7 @@
 {
   "name": "com.llib.bootstrapper",
   "version": "1.0.0",
-  "displayName": "Bootstrapper",
+  "displayName": "Bootstrap",
   "description": "초기에 필요한 오브젝트를 생성, 대상들의 초기화를 관리",
   "unity": "2022.0",
   "author": {

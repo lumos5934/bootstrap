@@ -1,5 +1,5 @@
 {
-    "name": "LLib.Runtime",
+    "name": "Bootstrap.Runtime",
     "rootNamespace": "",
     "references": [],
     "includePlatforms": [],

@@ -1,11 +1,13 @@
 {
-    "name": "LLib.Eidtor",
+    "name": "Bootstrap.Eidtor",
     "rootNamespace": "",
-    "references": [],
-    "includePlatforms": [],
-    "excludePlatforms": [
+    "references": [
+        "GUID:61d6c5529d0d6ba4c8fa01fe4e3b4980"
+    ],
+    "includePlatforms": [
         "Editor"
     ],
+    "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
