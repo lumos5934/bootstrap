@@ -2,25 +2,28 @@
 using System.Linq;
 using UnityEngine;
 
-public class BootstrapSetting : ScriptableObject
+namespace LLib
 {
-    private static BootstrapSetting _instance;
-    public static BootstrapSetting Instance
+    public class BootstrapSetting : ScriptableObject
     {
-        get
+        private static BootstrapSetting _instance;
+        public static BootstrapSetting Instance
         {
-            if (_instance == null)
+            get
             {
-                _instance = Resources.FindObjectsOfTypeAll<BootstrapSetting>().FirstOrDefault();
-            }
+                if (_instance == null)
+                {
+                    _instance = Resources.FindObjectsOfTypeAll<BootstrapSetting>().FirstOrDefault();
+                }
             
-            return _instance;
+                return _instance;
+            }
         }
+
+    
+        [SerializeField] private List<BootstrapEntry> entries;
+
+    
+        public List<BootstrapEntry> Entries => entries;
     }
-
-    
-    [SerializeField] private List<BootstrapEntry> entries;
-
-    
-    public List<BootstrapEntry> Entries => entries;
 }

@@ -1,22 +1,27 @@
 using UnityEngine;
 
-public static class Bootstrapper
+namespace LLib
 {
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-    private static void Boot()
+    public static class Bootstrapper
     {
-        var bootstrapSettings = BootstrapSetting.Instance;
-        if (bootstrapSettings == null)
-            return;
-
-        foreach (var entry in bootstrapSettings.Entries)
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+        private static void Boot()
         {
-            var obj = Object.Instantiate(entry.Prefab);
+            var bootstrapSettings = BootstrapSetting.Instance;
+            if (bootstrapSettings == null)
+                return;
 
-            if (entry.DontDestroyOnLoad)
+            foreach (var entry in bootstrapSettings.Entries)
             {
-                Object.DontDestroyOnLoad(obj);
+                var obj = Object.Instantiate(entry.Prefab);
+
+                if (entry.DontDestroyOnLoad)
+                {
+                    Object.DontDestroyOnLoad(obj);
+                }
             }
         }
     }
 }
+
+

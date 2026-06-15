@@ -1,12 +1,16 @@
 ﻿using System;
 using UnityEngine;
 
-[Serializable]
-public class BootstrapEntry
+namespace LLib
 {
-    [SerializeField] bool dontDestroyOnLoad;
-    [SerializeField] GameObject prefab;
+    [Serializable]
+    public class BootstrapEntry
+    {
+        [SerializeField] bool dontDestroyOnLoad;
+        [SerializeField] GameObject prefab;
 
-    public GameObject Prefab => prefab;
-    public bool DontDestroyOnLoad => dontDestroyOnLoad;
+        public GameObject Prefab => prefab;
+        public bool DontDestroyOnLoad => dontDestroyOnLoad;
+    }
 }
+
