@@ -22,10 +22,7 @@ namespace LLib.Editor
                 AssetDatabase.SaveAssets();
             }
 
-
             var preloadedAssets = PlayerSettings.GetPreloadedAssets().ToList();
-            preloadedAssets.RemoveAll(a => a == null);
-
             if (!preloadedAssets.Contains(setting))
             {
                 preloadedAssets.Add(setting);
