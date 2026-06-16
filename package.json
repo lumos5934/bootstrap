@@ -2,7 +2,7 @@
   "name": "com.llib.bootstrapper",
   "version": "1.0.0",
   "displayName": "Bootstrap",
-  "description": "초기에 필요한 오브젝트를 생성, 대상들의 초기화를 관리",
+  "description": "\ucd08\uae30\uc5d0 \ud544\uc694\ud55c \uc624\ube0c\uc81d\ud2b8\ub97c \uc0dd\uc131\ud569\ub2c8\ub2e4.",
   "unity": "2022.0",
   "author": {
     "name": "LUMOS",
