@@ -6,7 +6,7 @@
 <br>
 <br>
 
-## Usage
+## 🔧Usage
 
 컴파일시 `Assets` 경로에 `Bootstrap Setting`이 자동으로 생성되고 `PlayerSettings` 에 저장됩니다.<br>
 런타임시 자동으로 등록된 `Entries`의 멤버들을 생성하며, `Dont Destroy` 체크시 전역 오브젝트로 사용 할 수 있습니다. <br>
