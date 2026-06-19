@@ -15,7 +15,7 @@ namespace LLib
             {
                 var obj = Object.Instantiate(entry.Prefab);
 
-                if (entry.DontDestroyOnLoad)
+                if (entry.DontDestroy)
                 {
                     Object.DontDestroyOnLoad(obj);
                 }

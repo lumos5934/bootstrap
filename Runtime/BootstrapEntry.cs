@@ -6,11 +6,11 @@ namespace LLib
     [Serializable]
     public class BootstrapEntry
     {
-        [SerializeField] bool dontDestroyOnLoad;
-        [SerializeField] GameObject prefab;
+        [SerializeField] bool _dontDestroy;
+        [SerializeField] GameObject _prefab;
 
-        public GameObject Prefab => prefab;
-        public bool DontDestroyOnLoad => dontDestroyOnLoad;
+        public GameObject Prefab => _prefab;
+        public bool DontDestroy => _dontDestroy;
     }
 }
 

@@ -21,9 +21,9 @@ namespace LLib
         }
 
     
-        [SerializeField] private List<BootstrapEntry> entries;
+        [SerializeField] private List<BootstrapEntry> _entries;
 
     
-        public List<BootstrapEntry> Entries => entries;
+        public List<BootstrapEntry> Entries => _entries;
     }
 }
