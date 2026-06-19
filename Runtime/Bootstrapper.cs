@@ -13,6 +13,9 @@ namespace LLib
 
             foreach (var entry in bootstrapSettings.Entries)
             {
+                if(entry.Prefab == null)
+                    continue;
+                
                 var obj = Object.Instantiate(entry.Prefab);
 
                 if (entry.DontDestroy)
